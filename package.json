@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sberkaye/Natours.git"
+  },
+  "author": "Berkay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sberkaye/Natours/issues"
+  },
+  "homepage": "https://github.com/sberkaye/Natours#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
