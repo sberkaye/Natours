@@ -32,3 +32,25 @@ body {
     animation-duration: 1s;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    transform: skewY(-3deg) skewX(3deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.2);
+  }
+}
