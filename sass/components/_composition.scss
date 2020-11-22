@@ -1,0 +1,39 @@
+.composition {
+  position: relative;
+  &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 0.2rem;
+    position: absolute;
+    transition: all 0.2s;
+    outline-offset: 1rem;
+
+    &--p1 {
+      top: -2rem;
+      left: 1rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 5rem;
+    }
+
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.07) translateY(-0.5rem);
+      box-shadow: 0 3rem 4rem rgba($color-black, 0.7);
+      z-index: 5;
+    }
+  }
+
+  // when the composition is hovered, pick the photos that are not hovered
+  // can't achieve this inside &__photo with &:not(:hover) because the photos will be
+  // "not hovered" in the initial state of the page; so we need the composition's
+  // hover trgigger
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}
