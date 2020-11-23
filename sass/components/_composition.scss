@@ -29,7 +29,7 @@
     }
   }
 
-  // when the composition is hovered, pick the photos that are not hovered
+  // when the composition is hovered, pick the photos that are not hovered.
   // can't achieve this inside &__photo with &:not(:hover) because the photos will be
   // "not hovered" in the initial state of the page; so we need the composition's
   // hover trgigger
