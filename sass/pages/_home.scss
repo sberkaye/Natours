@@ -18,6 +18,12 @@
 
   // select the direct children of this element
   & > * {
-    transform: skewY(7deg);
+    transform: skewY(7deg); // skew it back to its original state
   }
+}
+
+.section-tours {
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+  background-color: $color-light-gray-1;
 }
