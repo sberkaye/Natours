@@ -9,8 +9,25 @@
 html {
   // this defines what 1rem is equal to (10px = 62.5% of the default 16px for most of the browsers)
   font-size: 62.5%;
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
